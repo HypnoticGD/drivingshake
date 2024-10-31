@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
         if IsPedInAnyVehicle(playerPed) then
             sleep = 100
             local vehicle = GetVehiclePedIsIn(playerPed, false)
-            local shakeRate = GetEntitySpeed(vehicle) / 250.0 -- 250.0 Normal Shake / 100.0 High Shake / 50.0 Maksimum Shake
+            local shakeRate = GetEntitySpeed(vehicle) / 250.0 -- 250.0 Normal Shake / 100.0 High Shake / 50.0 Maximum Shake
             local curHealth = GetVehicleBodyHealth(vehicle)
             if curHealth ~= lastDamage then
                 ShakeGameplayCam("MEDIUM_EXPLOSION_SHAKE", shakeRate)
